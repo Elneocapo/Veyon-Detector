@@ -8,21 +8,7 @@ Un programa ultra ligero en Rust que te avisa con una notificación en la pantal
 * Hace sonar un pitido (`beep`) en los cascos/altavoces del PC al detectar la conexión.
 
 ## ¿Cómo se usa?
-
-### 1. Compilarlo (Crear el .exe)
-Abre la terminal en la carpeta del proyecto y pon:
-```bash
-cargo build --release
-```
-Esto te creará un archivo ejecutable independiente en la carpeta `target/release/`.
-
-### 2. Ejecutarlo
-* Copia el archivo `.exe` que se ha generado y llévatelo a donde quieras (a un pendrive, al escritorio de clase, etc.).
-* Hazle doble clic para abrirlo. Se abrirá una ventana negra de consola que empezará a vigilar la red.
-* Si Windows te salta con el aviso azul de "SmartScreen", dale a **"Más información"** y luego a **"Ejecutar de todos modos"**.
-
-## Cómo probar si funciona (Simulación)
-Si quieres comprobar que las notificaciones te saltan bien sin esperar a que entre el profesor, abre una ventana de **PowerShell** en tu PC y pega este código:
+* Ejecuta el `.exe` y dejalo abierto, el programa te enviara una notificación discreta cuando Veyon sea activado para ver tu pantalla
 
 ```powershell
 \$servidor = [System.Net.Sockets.TcpListener]11400; \(servidor.Start()\)cliente = New-Object System.Net.Sockets.TcpClient; \$cliente.Connect("127.0.0.1", 11400)
