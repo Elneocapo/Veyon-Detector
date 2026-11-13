@@ -1,6 +1,7 @@
 # Monitor de Red (Alerta Veyon)
 
 Un programa ultra ligero en Rust que te avisa con una notificación en la pantalla de Windows y un pitido si el profesor se conecta a vigilar tu pantalla a través de Veyon u otras herramientas de red. No consume casi nada y funciona en segundo plano.
+### NO REQUIERE DE PRIVILEGIOS DE ADMINISTRADOR.
 
 ## ¿Qué hace?
 * Revisa cada segundo si hay conexiones activas en el puerto `11400` (el que usa Veyon para transmitir el vídeo de la pantalla).
