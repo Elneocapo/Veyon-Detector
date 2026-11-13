@@ -9,10 +9,3 @@ Un programa ultra ligero en Rust que te avisa con una notificación en la pantal
 
 ## ¿Cómo se usa?
 * Ejecuta el `.exe` y dejalo abierto, el programa te enviara una notificación discreta cuando Veyon sea activado para ver tu pantalla
-
-```powershell
-\$servidor = [System.Net.Sockets.TcpListener]11400; \(servidor.Start()\)cliente = New-Object System.Net.Sockets.TcpClient; \$cliente.Connect("127.0.0.1", 11400)
-Start-Sleep -Seconds 5
-cliente.Close(); servidor.Stop()
-```
-Mientras ese código de PowerShell esté corriendo (dura 5 segundos), abre tu programa de Rust. Debería saltarte la alerta roja y la notificación de inmediato.
