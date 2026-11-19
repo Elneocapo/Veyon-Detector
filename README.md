@@ -28,3 +28,6 @@ El programa utiliza PowerShell y las notificaciones de Windows (NotifyIcon / Sho
 4. Comprobar que Windows no esté en una sesión que las suprima
 - Revisa si está activado el modo de pantalla completa, una sesión de presentación o alguna configuración que silencie avisos.
 - Comprueba que el volumen y los sonidos de notificación no estén silenciados (esto afecta al sonido, no necesariamente al banner visual).
+
+## ¿Cómo saber si funciona?
+* al abrir el .exe debe salir abajo a la derecha una notificacion llamada "Port Tester" si no sale, no saldrá ninguna
